@@ -15,7 +15,6 @@
     height: 94%;
     border: 1px solid black;
     margin-top:15px;
-    border-radius: 15px;
     box-sizing: border-box;
     overflow-y: scroll;
 }
@@ -26,13 +25,11 @@
     height: 50px;
     margin: 10px 0;
     padding: 5px;
-    border-radius: 15px;
     overflow: hidden;
 
 }
 .open {
     border: 1px solid black;
-    border-radius: 15px;
     padding: 30px;
     margin: 20px;
 }
