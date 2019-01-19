@@ -1,0 +1,28 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(44,49,58);
+  color: #adafb2;
+  font-family: monospace; 
+  font-size: 15px; 
+  font-style: normal;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+#get_button {
+  width: 50vw;  
+  height: 10vh;
+  font-size: 21px;
+  font-family: monospace;
+  border-radius: 19px;
+  outline: none;
+  color: #adafb2;
+  background-color: rgb(44,49,58);
+}
+
