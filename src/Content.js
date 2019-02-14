@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Switcher from "./components/Switcher/Switcher"
 import './content.css'
 
 class Content extends Component {
@@ -40,11 +41,7 @@ class Content extends Component {
             )
           })}
         </div>
-        <label className="switch">
-          <span className='theme'>{this.props.theme ? 'Dark' : 'Light'}</span>
-          <input type="checkbox" onClick={this.props.switchTheme}/>
-          <span className="slider round" />
-        </label>
+          <Switcher styleParent='content__switcher' theme={this.props.theme} switchTheme={this.props.switchTheme}/>
       </div>
     );
   }
