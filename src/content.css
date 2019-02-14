@@ -6,11 +6,11 @@
     margin-top:15px;
 }
 
-#email {
+.content__email {
     width: 100px
 } 
 
-#container {
+.content__container {
     width: 100%;
     height: 94%;
     border: 1px solid black;

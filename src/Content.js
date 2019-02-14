@@ -28,11 +28,11 @@ class Content extends Component {
     const { openMessage } = this.state
     return (
       <div className='content'>
-        <div id='email'>{email}</div>
-        <div id='container'>
+        <div className='content__email'>{email}</div>
+        <div className='content__container'>
           {messages.map(item => {
             return (
-              <div className={openMessage !== item.id ? 'message_container' : 'message_contaner open'} key={item.id}>
+              <div className={openMessage !== item.id ? 'message_container' : 'message_container open'} key={item.id}>
                 <div className='from'>{item.from}</div>
                 <div className='message' onClick={() => this.openMessage(item.id)}>{item.message}</div>
                 <div className='time' onClick={this.closeMessage}>{item.time}</div>
