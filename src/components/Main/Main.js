@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import Content from './Content'
-import './App.css';
-import infa from './infa'
+import Content from '../Content/Content'
+import './Main.css';
+import infa from '../../infa'
 
-class App extends Component {
+class Main extends Component {
   constructor(props) {
     super(props)
 
@@ -41,4 +41,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Main;

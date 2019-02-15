@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import Switcher from "./components/Switcher/Switcher"
-import './content.css'
+import Switcher from "../Switcher/Switcher"
+import './Content.css'
 
 class Content extends Component {
 
