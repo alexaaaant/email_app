@@ -25,37 +25,6 @@
     top: 1%;
 }
 
-.message_container {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
-    height: 50px;
-    margin: 10px 0;
-    padding: 5px;
-    overflow: hidden;
-
-}
-.open {
-    border: 1px solid black;
-    padding: 30px;
-    margin: 20px;
-}
-
-.open div {
-    display: flex;
-    justify-content: flex-start;
-    padding-bottom: 10px;
-
-}
-
-.from, .time {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.message {
-    height: inherit;
-}
-
   .theme {
     position: relative;
     display: flex;

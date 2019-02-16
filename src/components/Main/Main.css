@@ -1,4 +1,4 @@
-.App {
+.Main {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,14 +15,4 @@
   color: black;
 }
 
-#get_button {
-  width: 50vw;  
-  height: 10vh;
-  font-size: 21px;
-  font-family: monospace;
-  border-radius: 19px;
-  outline: none;
-  color: #adafb2;
-  background-color: rgb(44,49,58);
-}
 

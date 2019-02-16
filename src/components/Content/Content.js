@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Switcher from "../Switcher/Switcher"
+import Message from './Message/Message'
 import './Content.css'
 
 class Content extends Component {
@@ -7,41 +8,37 @@ class Content extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      openMessage: null
+      openedMessage: null
     }
   }
 
   openMessage = (id) => {
     this.setState({
-      openMessage: id
+      openedMessage: id
     })
   }
 
   closeMessage = () => {
     this.setState({
-      openMessage: null
+      openedMessage: null
     })
   }
 
 
   render() {
     const { email, messages } = this.props.infa
-    const { openMessage } = this.state
+    const { openedMessage } = this.state
     return (
       <div className='content'>
         <div className='content__email'>{email}</div>
         <div className='content__container'>
           {messages.map(item => {
             return (
-              <div className={openMessage !== item.id ? 'message_container' : 'message_container open'} key={item.id}>
-                <div className='from'>{item.from}</div>
-                <div className='message' onClick={() => this.openMessage(item.id)}>{item.message}</div>
-                <div className='time' onClick={this.closeMessage}>{item.time}</div>
-              </div>
+              <Message key={item.id} openedMessage={openedMessage} openMessage={this.openMessage} closeMessage={this.closeMessage} item={item} />
             )
           })}
         </div>
-          <Switcher styleParent='content__switcher' theme={this.props.theme} switchTheme={this.props.switchTheme}/>
+        <Switcher styleParent='content__switcher' theme={this.props.theme} switchTheme={this.props.switchTheme} />
       </div>
     );
   }

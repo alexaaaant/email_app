@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Content from '../Content/Content'
 import './Main.css';
+import GetButton from '../GetButton/GetButton'
 import infa from '../../infa'
 
 class Main extends Component {
@@ -30,11 +31,17 @@ class Main extends Component {
   render() {
     const { getEmail, infa, dark } = this.state
     return (
-      <div className={this.state.dark ? "App" : "App white"}>
+      <div className={dark ? 'Main' : 'Main white'}>
         {
-          !getEmail ?
-            <button onClick={this.getEmail} id="get_button">Get email</button> :
-            <Content infa={infa} switchTheme={this.switchTheme} theme={dark}/>
+          getEmail ?
+            <Content 
+            infa={infa} 
+            switchTheme={this.switchTheme} 
+            theme={dark}
+            /> :
+            <GetButton 
+            getEmail={this.getEmail}
+            />
         }
       </div>
     );
